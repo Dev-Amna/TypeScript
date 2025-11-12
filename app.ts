@@ -128,18 +128,31 @@
 
 
 
-class BottleMaker {
-    constructor(public name : string, public brand : string,public price : number){
+// class BottleMaker {
+//     constructor(public name : string, public brand : string,public price : number){
 
-    }
+//     }
 
-    getBottle(){
-        return this.name;
-    }
-    setbottle(changeName :string){
-        this.name = changeName;
+//     getBottle(){
+//         return this.name;
+//     }
+//     setbottle(changeName :string){
+//         this.name = changeName;
+//     }
+// }
+
+// let b1 = new BottleMaker("Meltan", "newBrand",1200);
+// console.log(b1); 
+
+// Readonly properties 
+class User {
+    constructor(public name : string, public age:number,public gender?: string){
+
     }
 }
 
-let b1 = new BottleMaker("Meltan", "newBrand",1200);
-console.log(b1); 
+let u1 = new User("Amna", 16);
+let u2 = new User("Sara", 14,"Female");
+
+console.log(u1);
+console.log(u2);

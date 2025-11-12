@@ -98,19 +98,28 @@
 //    }
 // }
 // public and private in type scrpte
-var BottleMaker = /** @class */ (function () {
-    function BottleMaker(name, brand, price) {
+// class BottleMaker {
+//     constructor(public name : string, public brand : string,public price : number){
+//     }
+//     getBottle(){
+//         return this.name;
+//     }
+//     setbottle(changeName :string){
+//         this.name = changeName;
+//     }
+// }
+// let b1 = new BottleMaker("Meltan", "newBrand",1200);
+// console.log(b1); 
+// Readonly properties 
+var User = /** @class */ (function () {
+    function User(name, age, gender) {
         this.name = name;
-        this.brand = brand;
-        this.price = price;
+        this.age = age;
+        this.gender = gender;
     }
-    BottleMaker.prototype.getBottle = function () {
-        return this.name;
-    };
-    BottleMaker.prototype.setbottle = function (changeName) {
-        this.name = changeName;
-    };
-    return BottleMaker;
+    return User;
 }());
-var b1 = new BottleMaker("Meltan", "newBrand", 1200);
-console.log(b1);
+var u1 = new User("Amna", 16);
+var u2 = new User("Sara", 14, "Female");
+console.log(u1);
+console.log(u2);
