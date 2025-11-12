@@ -129,7 +129,7 @@
 
 
 class BottleMaker {
-    constructor(public name : string, public brand : string, prize : number){
+    constructor(public name : string, public brand : string,public price : number){
 
     }
 
@@ -137,6 +137,9 @@ class BottleMaker {
         return this.name;
     }
     setbottle(changeName :string){
-        this.name = 
+        this.name = changeName;
     }
 }
+
+let b1 = new BottleMaker("Meltan", "newBrand",1200);
+console.log(b1); 

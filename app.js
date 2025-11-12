@@ -1,8 +1,6 @@
-"use strict";
 // // // string used for text
 // // let name: string = "Amna";
 // // console.log("Hello  ", name);
-Object.defineProperty(exports, "__esModule", { value: true });
 // // // number
 // // let age: number = 16;
 // // console.log("my age is ", age);
@@ -100,19 +98,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //    }
 // }
 // public and private in type scrpte
-class BottleMaker {
-    name;
-    brand;
-    constructor(name, brand, prize) {
+var BottleMaker = /** @class */ (function () {
+    function BottleMaker(name, brand, price) {
         this.name = name;
         this.brand = brand;
+        this.price = price;
     }
-    getBottle() {
+    BottleMaker.prototype.getBottle = function () {
         return this.name;
-    }
-    setbottle(changeName) {
-        this.name =
-        ;
-    }
-}
-//# sourceMappingURL=app.js.map
+    };
+    BottleMaker.prototype.setbottle = function (changeName) {
+        this.name = changeName;
+    };
+    return BottleMaker;
+}());
+var b1 = new BottleMaker("Meltan", "newBrand", 1200);
+console.log(b1);
