@@ -109,8 +109,8 @@
 //     }
 // }
 // let b1 = new BottleMaker("Meltan", "newBrand",1200);
-// console.log(b1); 
-// Readonly properties 
+// console.log(b1);
+// Readonly properties
 var User = /** @class */ (function () {
     function User(name, age, gender) {
         this.name = name;
@@ -119,7 +119,26 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
-var u1 = new User("Amna", 16);
-var u2 = new User("Sara", 14, "Female");
-console.log(u1);
-console.log(u2);
+// let u1 = new User("Amna", 16);
+// let u2 = new User("Sara", 14, "Female");
+// console.log(u1);
+// console.log(u2);
+// Getter and Setter
+var Person = /** @class */ (function () {
+    function Person(_name, _age) {
+        this._name = _name;
+        this._age = _age;
+    }
+    Object.defineProperty(Person.prototype, "name", {
+        get: function () {
+            return this._name;
+        },
+        set: function (updateName) {
+            this._name = updateName;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Person;
+}());
+var p1 = new Person("Amna", 16);
