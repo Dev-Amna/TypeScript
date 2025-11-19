@@ -140,14 +140,32 @@ class User {
 // }
 // let p1 = new Person("Amna", 16);
 // Function in Ts
-function personInfo(name, age, msg) {
-    msg("Hello Amna! What's going on?");
-    console.log(name);
-    console.log(age);
-}
-personInfo("Amna", 16, ((text) => {
-    console.log(text);
-}));
+// function personInfo(name :string, age :number,msg: (arg: string) => void) {
+//   msg("Hello Amna! What's going on?");
+//   console.log(name);
+//   console.log(age);
+// }
+//  personInfo("Amna", 16, ((text) =>{
+//   console.log(text);
+// }))
 // Optional Parameters
-// When the argument may not be passed
+// When the argument may not be passed (we use ? for make optinal parameter)
+class Info {
+    name;
+    age;
+    pronoun;
+    constructor(name, age, pronoun) {
+        this.name = name;
+        this.age = age;
+        this.pronoun = pronoun;
+    }
+    speak() {
+        console.log("Hello I'm ", this.name);
+    }
+}
+let p1 = new Info("Amna", 16);
+let p2 = new Info("Sara", 15, "she/her");
+console.log(p1);
+console.log(p2);
+p1.speak();
 //# sourceMappingURL=app.js.map
