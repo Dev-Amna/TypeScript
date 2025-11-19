@@ -176,10 +176,10 @@ class User {
 // Function in Ts
 
 
-function personInfo(msg: () => void) {
-  msg(); // call the function
+function personInfo(msg: (arg: string) => void) {
+  msg("Hello Amna! What's going on?");
 }
+personInfo(((text) =>{
+  console.log(text);
+}))
 
-personInfo(() => {
-  console.log("Hello Amna!");
-});

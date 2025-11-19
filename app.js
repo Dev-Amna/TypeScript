@@ -141,9 +141,9 @@ class User {
 // let p1 = new Person("Amna", 16);
 // Function in Ts
 function personInfo(msg) {
-    msg(); // call the function
+    msg("Hello Amna! What's going on?");
 }
-personInfo(() => {
-    console.log("Hello Amna!");
-});
+personInfo(((text) => {
+    console.log(text);
+}));
 //# sourceMappingURL=app.js.map
