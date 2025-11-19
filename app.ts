@@ -176,10 +176,14 @@ class User {
 // Function in Ts
 
 
-function personInfo(msg: (arg: string) => void) {
+function personInfo(name :string, age :number,msg: (arg: string) => void) {
   msg("Hello Amna! What's going on?");
+  console.log(name);
+  console.log(age);
 }
-personInfo(((text) =>{
+ personInfo("Amna", 16, ((text) =>{
   console.log(text);
 }))
 
+// Optional Parameters
+// When the argument may not be passed

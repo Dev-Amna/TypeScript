@@ -140,10 +140,14 @@ class User {
 // }
 // let p1 = new Person("Amna", 16);
 // Function in Ts
-function personInfo(msg) {
+function personInfo(name, age, msg) {
     msg("Hello Amna! What's going on?");
+    console.log(name);
+    console.log(age);
 }
-personInfo(((text) => {
+personInfo("Amna", 16, ((text) => {
     console.log(text);
 }));
+// Optional Parameters
+// When the argument may not be passed
 //# sourceMappingURL=app.js.map
