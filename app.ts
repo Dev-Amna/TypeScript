@@ -210,3 +210,16 @@ function sum(...arr : number[]){
   console.log(arr);
 }
 sum(1,2,3,4,5,6);
+// for string
+function names(...name:string[]){
+  console.log(name);
+}
+
+names("Amna","Sara", "Sana","iqra");
+
+// spread op (...)
+let fruit : string[] = ["Apple", "Mango","Orange","Banana"];
+
+let newFruit :string[]= [...fruit, "Grapes", "Blueberry"];
+console.log(fruit);
+console.log(newFruit);

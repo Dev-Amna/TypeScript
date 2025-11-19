@@ -176,4 +176,14 @@ function sum(...arr) {
     console.log(arr);
 }
 sum(1, 2, 3, 4, 5, 6);
+// for string
+function names(...name) {
+    console.log(name);
+}
+names("Amna", "Sara", "Sana", "iqra");
+// spread op (...)
+let fruit = ["Apple", "Mango", "Orange", "Banana"];
+let newFruit = [...fruit, "Grapes", "Blueberry"];
+console.log(fruit);
+console.log(newFruit);
 //# sourceMappingURL=app.js.map
