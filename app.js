@@ -170,4 +170,10 @@ let p2 = new Info("Sara", 15, "she/her");
 console.log(p1);
 console.log(p2);
 p1.speak();
+// reset parameters in ts
+// we use there dot like in spread oprater (...)
+function sum(...arr) {
+    console.log(arr);
+}
+sum(1, 2, 3, 4, 5, 6);
 //# sourceMappingURL=app.js.map

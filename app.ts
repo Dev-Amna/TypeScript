@@ -204,3 +204,9 @@ console.log(p2);
 p1.speak();
 
 
+// reset parameters in ts
+// we use there dot like in spread oprater (...)
+function sum(...arr : number[]){
+  console.log(arr);
+}
+sum(1,2,3,4,5,6);
