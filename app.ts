@@ -174,7 +174,12 @@ class User {
 
 
 // Function in Ts
-function personInfo(msg:()=>void){
-  console.log(msg);
+
+
+function personInfo(msg: () => void) {
+  msg(); // call the function
 }
 
+personInfo(() => {
+  console.log("Hello Amna!");
+});
