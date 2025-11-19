@@ -1,6 +1,8 @@
+"use strict";
 // // // string used for text
 // // let name: string = "Amna";
 // // console.log("Hello  ", name);
+Object.defineProperty(exports, "__esModule", { value: true });
 // // // number
 // // let age: number = 16;
 // // console.log("my age is ", age);
@@ -111,34 +113,34 @@
 // let b1 = new BottleMaker("Meltan", "newBrand",1200);
 // console.log(b1);
 // Readonly properties
-var User = /** @class */ (function () {
-    function User(name, age, gender) {
+class User {
+    name;
+    age;
+    gender;
+    constructor(name, age, gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
-    return User;
-}());
+}
 // let u1 = new User("Amna", 16);
 // let u2 = new User("Sara", 14, "Female");
 // console.log(u1);
 // console.log(u2);
 // Getter and Setter
-var Person = /** @class */ (function () {
-    function Person(_name, _age) {
-        this._name = _name;
-        this._age = _age;
-    }
-    Object.defineProperty(Person.prototype, "name", {
-        get: function () {
-            return this._name;
-        },
-        set: function (updateName) {
-            this._name = updateName;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return Person;
-}());
-var p1 = new Person("Amna", 16);
+// class Person {
+//   constructor(public _name: string, public _age: number) {
+//   }
+//   get name(){
+//     return this._name;
+//   }
+//   set name(updateName: string){
+//     this._name = updateName;
+//   }
+// }
+// let p1 = new Person("Amna", 16);
+// Function in Ts
+function personInfo(msg) {
+    console.log(msg);
+}
+//# sourceMappingURL=app.js.map

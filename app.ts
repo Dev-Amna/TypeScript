@@ -157,20 +157,24 @@ class User {
 // console.log(u1);
 // console.log(u2);
 // Getter and Setter
-class Person {
-  constructor(public _name: string, public _age: number) {
+// class Person {
+//   constructor(public _name: string, public _age: number) {
 
-  }
-  get name(){
-    return this._name;
-  }
+//   }
+//   get name(){
+//     return this._name;
+//   }
+//   set name(updateName: string){
+//     this._name = updateName;
+//   }
+// }
 
-  set name(updateName: string){
-    this._name = updateName;
-  }
+
+// let p1 = new Person("Amna", 16);
+
+
+// Function in Ts
+function personInfo(msg:()=>void){
+  console.log(msg);
 }
-
-
-let p1 = new Person("Amna", 16);
-
 
