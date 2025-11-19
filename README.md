@@ -43,3 +43,19 @@ Named constants. Useful to define a set of fixed options.
 Assign a type to variables, function parameters, and return values for clarity and safety.
 
 ---
+
+## 9. Interfaces & Type Aliases
+- `interface`: defines structure of objects.
+- `type alias`: defines a type, can combine or be a union of types.
+
+---
+
+## 10. Extending Interfaces
+Interfaces can inherit from other interfaces to add or reuse properties.
+
+---
+
+## 11. Fundamentals of Type Aliases
+Type aliases can define object shapes, union types, or simple types for reuse.
+
+---
