@@ -19,3 +19,17 @@ A list of items of the same type. Can be written as `type[]` or `Array<type>`.
 
 ## 4. Tuples
 Fixed-length arrays where each element has a specific type.
+---
+
+## 5. Enums
+Named constants. Useful to define a set of fixed options.
+
+---
+
+## 6. Any, Unknown, Void & More
+- `any`: can be any type, disables type checking.
+- `unknown`: any type but safer, must check before use.
+- `void`: no return value in functions.
+- `never`: function never returns, usually throws error.
+
+---
