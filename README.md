@@ -33,3 +33,13 @@ Named constants. Useful to define a set of fixed options.
 - `never`: function never returns, usually throws error.
 
 ---
+## 7. Type Inference & Type Annotations
+- TypeScript can guess the type automatically (inference).
+- You can also explicitly declare type (annotation).
+
+---
+
+## 8. Type Annotations
+Assign a type to variables, function parameters, and return values for clarity and safety.
+
+---
