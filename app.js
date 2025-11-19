@@ -148,13 +148,15 @@ class User {
 //  personInfo("Amna", 16, ((text) =>{
 //   console.log(text);
 // }))
-// Optional Parameters
+// Optional Parameters 
 // When the argument may not be passed (we use ? for make optinal parameter)
+// Default Parameters 
+// When you want a default if not passed
 class Info {
     name;
     age;
     pronoun;
-    constructor(name, age, pronoun) {
+    constructor(name, age = 18, pronoun) {
         this.name = name;
         this.age = age;
         this.pronoun = pronoun;
@@ -163,7 +165,7 @@ class Info {
         console.log("Hello I'm ", this.name);
     }
 }
-let p1 = new Info("Amna", 16);
+let p1 = new Info("Amna"); //it's log 18 age becuase I can't give it my age so it's get age form "default"
 let p2 = new Info("Sara", 15, "she/her");
 console.log(p1);
 console.log(p2);
