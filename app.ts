@@ -143,13 +143,13 @@
 // console.log(b1);
 
 // Readonly properties
-class User {
-  constructor(
-    public name: string,
-    public age: number,
-    public gender?: string
-  ) {}
-}
+// class User {
+//   constructor(
+//     public name: string,
+//     public age: number,
+//     public gender?: string
+//   ) {}
+// }
 
 // let u1 = new User("Amna", 16);
 // let u2 = new User("Sara", 14, "Female");
@@ -189,39 +189,54 @@ class User {
 // When the argument may not be passed (we use ? for make optinal parameter)
 // Default Parameters 
 // When you want a default if not passed
-class Info {
-  constructor(public name: string,public age:number = 18,public pronoun?:string){
-  }
-  speak(){
-    console.log("Hello I'm ",this.name);
-  }
-}
+// class Info {
+//   constructor(public name: string,public age:number = 18,public pronoun?:string){
+//   }
+//   speak(){
+//     console.log("Hello I'm ",this.name);
+//   }
+// }
 
-let p1 = new Info("Amna");//it's log 18 age becuase I can't give it my age so it's get age form "default"
-let p2 = new Info("Sara", 15, "she/her");
-console.log(p1);
-console.log(p2);
-p1.speak();
+// let p1 = new Info("Amna");//it's log 18 age becuase I can't give it my age so it's get age form "default"
+// let p2 = new Info("Sara", 15, "she/her");
+// console.log(p1);
+// console.log(p2);
+// p1.speak();
 
 
 // reset parameters in ts
 // we use there dot like in spread oprater (...)
-function sum(...arr : number[]){
-  console.log(arr);
-}
-sum(1,2,3,4,5,6);
+// function sum(...arr : number[]){
+//   console.log(arr);
+// }
+// sum(1,2,3,4,5,6);
 // for string
-function names(...name:string[]){
-  console.log(name);
-}
+// function names(...name:string[]){
+//   console.log(name);
+// }
 
-names("Amna","Sara", "Sana","iqra");
+// names("Amna","Sara", "Sana","iqra");
 
 // spread op (...)
-let fruit : string[] = ["Apple", "Mango","Orange","Banana"];
+// let fruit : string[] = ["Apple", "Mango","Orange","Banana"];
 
-let newFruit :string[]= [...fruit, "Grapes", "Blueberry"];
-console.log(fruit);
-console.log(newFruit);
+// let newFruit :string[]= [...fruit, "Grapes", "Blueberry"];
+// console.log(fruit);
+// console.log(newFruit);
 
 // function over loadig
+function greet(name:string):string;
+function greet(age:number):string;
+
+function greet(value:any){
+  if(typeof value === "string"){
+    console.log(`Hello ${value}`);
+  }
+
+  if(typeof value === "number"){
+    console.log(`You are ${value} year old.`);
+  }
+}
+
+greet("Amna");
+greet(16);
