@@ -169,12 +169,9 @@
 //   }
 // }
 
-
 // let p1 = new Person("Amna", 16);
 
-
 // Function in Ts
-
 
 // function personInfo(name :string, age :number,msg: (arg: string) => void) {
 //   msg("Hello Amna! What's going on?");
@@ -185,9 +182,9 @@
 //   console.log(text);
 // }))
 
-// Optional Parameters 
+// Optional Parameters
 // When the argument may not be passed (we use ? for make optinal parameter)
-// Default Parameters 
+// Default Parameters
 // When you want a default if not passed
 // class Info {
 //   constructor(public name: string,public age:number = 18,public pronoun?:string){
@@ -202,7 +199,6 @@
 // console.log(p1);
 // console.log(p2);
 // p1.speak();
-
 
 // reset parameters in ts
 // we use there dot like in spread oprater (...)
@@ -225,18 +221,22 @@
 // console.log(newFruit);
 
 // function over loadig
-function greet(name:string):string;
-function greet(age:number):string;
+function greet(name: string): string;
+function greet(age: number): string;
+function greet(name: string, age: number): string;
 
-function greet(value:any){
-  if(typeof value === "string"){
+function greet(value: any, value2?: any) {
+  if (typeof value === "string" && typeof value2 === "undefined") {
     console.log(`Hello ${value}`);
-  }
-
-  if(typeof value === "number"){
+  } else if (typeof value === "number" && typeof value2 === "undefined") {
     console.log(`You are ${value} year old.`);
+  } else if (typeof value === "string" && typeof value2 === "number") {
+    console.log(`Hello ${value}, you are ${value2} years old.`);
+  } else {
+    throw new Error("Invail Input! Please try again");
   }
 }
 
 greet("Amna");
 greet(16);
+greet("AMna", 16);
