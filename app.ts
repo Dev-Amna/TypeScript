@@ -223,3 +223,5 @@ let fruit : string[] = ["Apple", "Mango","Orange","Banana"];
 let newFruit :string[]= [...fruit, "Grapes", "Blueberry"];
 console.log(fruit);
 console.log(newFruit);
+
+// function over loadig
