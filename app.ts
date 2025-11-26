@@ -240,3 +240,4 @@ function greet(value: any, value2?: any) {
 greet("Amna");
 greet(16);
 greet("AMna", 16);
+//  
