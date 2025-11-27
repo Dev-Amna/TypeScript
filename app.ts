@@ -221,23 +221,29 @@
 // console.log(newFruit);
 
 // function over loadig
-function greet(name: string): string;
-function greet(age: number): string;
-function greet(name: string, age: number): string;
+// function greet(name: string): string;
+// function greet(age: number): string;
+// function greet(name: string, age: number): string;
 
-function greet(value: any, value2?: any) {
-  if (typeof value === "string" && typeof value2 === "undefined") {
-    console.log(`Hello ${value}`);
-  } else if (typeof value === "number" && typeof value2 === "undefined") {
-    console.log(`You are ${value} year old.`);
-  } else if (typeof value === "string" && typeof value2 === "number") {
-    console.log(`Hello ${value}, you are ${value2} years old.`);
-  } else {
-    throw new Error("Invail Input! Please try again");
-  }
+// function greet(value: any, value2?: any) {
+//   if (typeof value === "string" && typeof value2 === "undefined") {
+//     console.log(`Hello ${value}`);
+//   } else if (typeof value === "number" && typeof value2 === "undefined") {
+//     console.log(`You are ${value} year old.`);
+//   } else if (typeof value === "string" && typeof value2 === "number") {
+//     console.log(`Hello ${value}, you are ${value2} years old.`);
+//   } else {
+//     throw new Error("Invail Input! Please try again");
+//   }
+// }
+// // 
+
+// greet("Amna");
+// greet(16);
+// greet("AMna", 16);
+//  Genratio
+function doSomthing<T>(val:T){
+  console.log("you write :", val);
 }
 
-greet("Amna");
-greet(16);
-greet("AMna", 16);
-//  
+doSomthing<number>(12);
