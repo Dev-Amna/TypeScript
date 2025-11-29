@@ -288,3 +288,9 @@ let info1: Info<string> = {
 // }
 // let p1 = new Person("Amna", 16,"sjdajdklasjd");
 // console.log(p1);
+
+// Modules
+import {Payment , Detail} from "./payment";
+
+Payment("Amna");
+Detail();

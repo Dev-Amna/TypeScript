@@ -228,4 +228,8 @@ let info1 = {
 // }
 // let p1 = new Person("Amna", 16,"sjdajdklasjd");
 // console.log(p1);
+// Modules
+const payment_1 = require("./payment");
+(0, payment_1.Payment)("Amna");
+(0, payment_1.Detail)();
 //# sourceMappingURL=app.js.map

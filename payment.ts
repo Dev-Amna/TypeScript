@@ -1,7 +1,7 @@
-function Payment(val: string) {
+export function Payment(val: string) {
   console.log(val);
 }
 
-function Detail() {
+export function Detail() {
   console.log("my name is amna");
 }
