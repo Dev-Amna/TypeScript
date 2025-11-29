@@ -127,4 +127,25 @@ Functions are blocks of code that perform tasks. Can take parameters and return 
 ---
 
 ## 25. Functions: Rest Parameter
-A way to accept multiple arguments as an array in a function.
+A way to accept multiple arguments as an array in a function. and we use the syntax `...args`.
+---
+## 26. Functions: Function Overloading
+Define multiple function signatures for a single function implementation.
+---
+## 27. Functions: Optional Parameters
+Parameters that may or may not be provided when calling a function. Marked with a `?`.
+example: `function foo(bar?: string) { }`
+---
+## 28. Functions: Default Parameters
+Parameters that have a default value if not provided when calling the function.
+example: `function foo(bar: string = "default") { }`
+---
+## 29. Modules 
+- Modules: separate files that export and import code.
+
+- Use `export` to share code and `import` to use it in another file.
+---
+## 30. Type Assertions
+Tell TypeScript to treat a value as a specific type using `as` or angle brackets.
+example: `let someValue: any = "this is a string"; let strLength: number = (someValue as string).length;`
+---

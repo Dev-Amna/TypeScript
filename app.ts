@@ -290,7 +290,11 @@ let info1: Info<string> = {
 // console.log(p1);
 
 // Modules
-import {Payment , Detail} from "./payment";
+// import {Payment , Detail} from "./payment";
 
-Payment("Amna");
-Detail();
+// Payment("Amna");
+// Detail();
+// Type Assertions
+let someValue : any= "This is some value";
+let giveType : string = someValue as string;
+console.log(giveType);

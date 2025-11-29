@@ -229,7 +229,11 @@ let info1 = {
 // let p1 = new Person("Amna", 16,"sjdajdklasjd");
 // console.log(p1);
 // Modules
-const payment_1 = require("./payment");
-(0, payment_1.Payment)("Amna");
-(0, payment_1.Detail)();
+// import {Payment , Detail} from "./payment";
+// Payment("Amna");
+// Detail();
+// Type Assertions
+let someValue = "This is some value";
+let giveType = someValue;
+console.log(giveType);
 //# sourceMappingURL=app.js.map
