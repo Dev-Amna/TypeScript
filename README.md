@@ -149,3 +149,6 @@ example: `function foo(bar: string = "default") { }`
 Tell TypeScript to treat a value as a specific type using `as` or angle brackets.
 example: `let someValue: any = "this is a string"; let strLength: number = (someValue as string).length;`
 ---
+## 31. Type Guards
+Runtime checks that ensure a variable is of a specific type before using it.
+example: `if (typeof someVar === "string") { // someVar is string here }`
