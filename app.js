@@ -192,13 +192,40 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     throw new Error("Invail Input! Please try again");
 //   }
 // }
-// // 
+// //
 // greet("Amna");
 // greet(16);
 // greet("AMna", 16);
-//  Genratio
-function doSomthing(val) {
-    console.log("you write :", val);
+//  Generic
+// function doSomthing<T>(val:T){
+//   console.log("you write :", val);
+// }
+// doSomthing<number>(12);
+// generic in function
+function writeSomthing(value) {
+    if (typeof value === "number") {
+        console.log(`your number square are ${value * value}`);
+    }
+    else if (typeof value === "string") {
+        console.log("You write ", value);
+    }
+    else {
+        console.log(value);
+    }
 }
-doSomthing(12);
+let info1 = {
+    name: "Amna",
+    age: 16,
+    isDevelpor: "YEs it is a develpor   ",
+};
+// console.log(info1);
+// Generic in classes
+// class Person<T> {
+//   constructor(public name: string, public age: number, public id:T) {}
+//   sayHello() {
+//     console.log(`Hello My name is ${this.name},and I am ${this.age} year old!`);
+//   }
+// }
+// let p1 = new Person("Amna", 16,"sjdajdklasjd");
+// console.log(p1);
 //# sourceMappingURL=app.js.map
